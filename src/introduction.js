@@ -6,10 +6,17 @@ export function sub(a, b) {
   return b - a;
 }
 
-export function sum(values){
-  return values.reduce((elmt,prec)=>elmt+prec,0)
+export function sum(values) {
+  return values.reduce((elmt, prec) => elmt + prec, 0);
 }
 
-export function addToAll(values,toAdd){
-  return values.map((elmt)=>elmt+toAdd)
+export function addToAll(values, toAdd) {
+  return values.map((elmt) => elmt + toAdd);
+}
+
+export function average(values) {
+  if (values.length === 0) {
+    return null;
+  }
+  return sum(values) / values.length;
 }
