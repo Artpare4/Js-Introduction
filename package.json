@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -25,6 +22,7 @@
   },
   "scripts": {
     "lint": "npx eslint src tests",
-    "fix": "npx eslint src tests --fix"
+    "fix": "npx eslint src tests --fix",
+    "test": "npx jest"
   }
 }
