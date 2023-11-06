@@ -28,3 +28,8 @@ export function isAdult(user) {
 export function isChild(user) {
   return user.age < 18;
 }
+
+export function extractAge(users){
+  return users.map((user)=>user.age);
+}
+
