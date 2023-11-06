@@ -20,3 +20,11 @@ export function average(values) {
   }
   return sum(values) / values.length;
 }
+
+export function isAdult(user) {
+  return user.age >= 18;
+}
+
+export function isChild(user) {
+  return user.age < 18;
+}
