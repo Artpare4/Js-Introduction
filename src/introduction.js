@@ -29,7 +29,16 @@ export function isChild(user) {
   return user.age < 18;
 }
 
-export function extractAge(users){
-  return users.map((user)=>user.age);
+export function extractAge(users) {
+  return users.map((user) => user.age);
 }
 
+export function adultFilter(users, type) {
+  if (type === "adult") {
+    return users.filter((user) => isAdult(user));
+  }
+  if (type === "child") {
+    return users.filter((user) => isChild(user));
+  }
+  return users;
+}
