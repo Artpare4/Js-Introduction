@@ -54,3 +54,7 @@ export function isAllAdult(users) {
 export function hasChild(users) {
   return users.some(isChild);
 }
+
+export function addIsAdultProperty(users) {
+  return users.map((user) => ({ ...user, isAdult: isAdult(user) }));
+}
