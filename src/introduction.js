@@ -9,3 +9,7 @@ export function sub(a, b) {
 export function sum(values){
   return values.reduce((elmt,prec)=>elmt+prec,0)
 }
+
+export function addToAll(values,toAdd){
+  return values.map((elmt)=>elmt+toAdd)
+}
