@@ -3,7 +3,23 @@ import {add} from "./introduction";
 export function createHtmlUser(age) {
     const liElt = document.createElement("li");
     liElt.className = "user";
-    liElt.innerHTML = age;
+    liElt.innerHTML =
+        `<li>
+            <form class='user'> 
+                <label>
+                    <input type="text" class="input user__name" value="Name">
+                </label>
+                -
+                <label>
+                    <input type="number" class="input user__age" value="${age}">
+                </label>
+                <button type="button" class="button user__delete">
+                    <span class="material-symbols-outlined">
+                    delete
+                    </span>
+                </button>
+            </form>
+        </li>`;
     return liElt;
 }
 
