@@ -28,3 +28,11 @@ export function setAddUserEltCallback(addUserElt, usersElt){
        usersElt.appendChild(createHtmlUser(Math.round(Math.random()*(32-12)+12)))
    });
 }
+export function extractUser(userElt){
+    let user={
+        name:userElt.querySelector(".user__name").value,
+        age:parseInt(userElt.querySelector(".user__age").value)
+
+    };
+    return user;
+}
