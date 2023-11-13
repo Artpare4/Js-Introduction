@@ -36,3 +36,9 @@ export function extractUser(userElt){
     };
     return user;
 }
+
+export function extractUsers(usersElt){
+    var liste=usersElt.querySelectorAll("li.user");
+    liste=Array.from(liste,extractUser);
+    return liste;
+}
