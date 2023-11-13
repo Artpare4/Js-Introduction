@@ -42,3 +42,7 @@ export function extractUsers(usersElt){
     liste=Array.from(liste,extractUser);
     return liste;
 }
+
+export function extractUserType(infoElt){
+    return infoElt.querySelector(":checked").value;
+}
