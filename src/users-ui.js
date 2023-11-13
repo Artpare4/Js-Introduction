@@ -9,6 +9,6 @@ export function createHtmlUser(age) {
 
 export function setAddUserEltCallback(addUserElt, usersElt){
    addUserElt.addEventListener("click",()=> {
-       usersElt.appendChild(createHtmlUser(Math.round(Math.random()*100)))
+       usersElt.appendChild(createHtmlUser(Math.round(Math.random()*(32-12)+12)))
    });
 }
