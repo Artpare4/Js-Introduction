@@ -1,4 +1,4 @@
-import {add} from "./introduction";
+import {add, ageAverage} from "./introduction";
 
 export function createHtmlUser(age) {
     const liElt = document.createElement("li");
@@ -45,4 +45,9 @@ export function extractUsers(usersElt){
 
 export function extractUserType(infoElt){
     return infoElt.querySelector(":checked").value;
+}
+
+export function  updateAgeAverage(usersElt,infoElt){
+    var users=extractUsers(usersElt);
+    var avg=ageAverage(users);
 }
