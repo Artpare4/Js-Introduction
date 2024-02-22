@@ -5,7 +5,7 @@ Introduction au langage javascript. Découverte de ce langage, de ces spécifici
 
 ## Installation
 
-Installation des paquets nécéssaires:
+Installation des paquets nécessaires:
 ```bash
 npm install
 ```
